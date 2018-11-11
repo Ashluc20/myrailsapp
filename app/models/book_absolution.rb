@@ -1,0 +1,2 @@
+class BookAbsolution < ApplicationRecord
+end
