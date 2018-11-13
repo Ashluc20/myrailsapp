@@ -14,15 +14,9 @@ class ProductsTest < ApplicationSystemTestCase
     visit products_url
     click_on "New Product"
 
-    fill_in "Awakening", with: @product.Awakening
-    fill_in "Book", with: @product.Book
-    fill_in "Series", with: @product.Series
     fill_in "Description", with: @product.description
     fill_in "Image Url", with: @product.image_url
-    fill_in "In", with: @product.in
     fill_in "Name", with: @product.name
-    fill_in "String", with: @product.string
-    fill_in "The", with: @product.the
     click_on "Create Product"
 
     assert_text "Product was successfully created"
@@ -33,15 +27,9 @@ class ProductsTest < ApplicationSystemTestCase
     visit products_url
     click_on "Edit", match: :first
 
-    fill_in "Awakening", with: @product.Awakening
-    fill_in "Book", with: @product.Book
-    fill_in "Series", with: @product.Series
     fill_in "Description", with: @product.description
     fill_in "Image Url", with: @product.image_url
-    fill_in "In", with: @product.in
     fill_in "Name", with: @product.name
-    fill_in "String", with: @product.string
-    fill_in "The", with: @product.the
     click_on "Update Product"
 
     assert_text "Product was successfully updated"

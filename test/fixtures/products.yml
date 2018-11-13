@@ -2,22 +2,10 @@
 
 one:
   name: MyString
-  string: MyString
-  description: 
-  Book: MyString
-  in: MyString
-  the: MyString
-  Awakening: MyString
-  Series: MyString
+  description: MyText
   image_url: MyString
 
 two:
   name: MyString
-  string: MyString
-  description: 
-  Book: MyString
-  in: MyString
-  the: MyString
-  Awakening: MyString
-  Series: MyString
+  description: MyText
   image_url: MyString

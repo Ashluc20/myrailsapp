@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :products
-  resources :book_absolutions
   get 'simple_pages/about'
   get 'simple_pages/contact'
   get 'simple_pages/index'
