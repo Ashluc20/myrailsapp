@@ -1,10 +1,10 @@
-
+<% @products.each do |product| %>
 <div class="col-sm align-self-start" id="card">
   <a href="#"><h2><%= product.name %></h2></a>
   <br>
   <%= product.description %>
   <br>
-  <%= image_tag(product.image_url, class: "img-fluid img-thumbnail", width: '318px', height: '180px') %>
+  <%= image_tag(product.image_url, class: "img-responsive") %>
   <br>
   <%= product.price %>
   <br>
@@ -15,3 +15,4 @@
   <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   <br>
 </div> <!-- end col -->
+<% end %>
