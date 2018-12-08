@@ -1,3 +1,3 @@
 class Order < ApplicationRecord
-  belongs_to :umbrella
+  belongs_to :product
 end
