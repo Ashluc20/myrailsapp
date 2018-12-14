@@ -14,5 +14,5 @@ Product.create(name: "Product 4", description: "Description for Product 4", imag
 Product.create(name: "Product 5", description: "Description for Product 5", image_url: "https://farm3.staticflickr.com/2709/4396687745_6d85772f0f.jpg", price: 0)
 
 Order.delete_all
-Order.create(user_id: 1, product_id: Product.first.id, total: 100)
-Order.create(user_id: 1, product_id: Product.last.id, total: 500)
+Order.create(user_id: 1, product_id: Product.first.id, total: 0)
+Order.create(user_id: 1, product_id: Product.last.id, total: 0)
