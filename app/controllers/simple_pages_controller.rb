@@ -4,7 +4,7 @@ class SimplePagesController < ApplicationController
 
   def landing_page
       @products = Product.limit(3)
-
+  end
 
   def thank_you
       @name = params[:name]
@@ -14,5 +14,6 @@ class SimplePagesController < ApplicationController
         to: 'ashleylucero20@gmail.com',
         subject: "A new contact form message from #{@name}",
         body: @message).deliver_now
+
   end
 end
