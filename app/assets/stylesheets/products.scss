@@ -1,3 +1,90 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+footer {
+  background-color: #2e4052;
+  padding: 1vw;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  display: block;
+  margin: 0;
+  margin-bottom: 94.98px;
+  margin-top: 135.97px;
+}
+
+
+head {
+  box-sizing: border-box;
+}
+
+
+header {
+  display: block;
+}
+
+
+.navbar {
+  padding: 1vw;
+  justify-content: space-between;
+}
+
+
+.navbar .navbar-dark .navbar-example {
+  font-size: 2rem;
+  color: #fff;
+}
+
+
+a {
+  font-size: 2rem;
+}
+
+
+a:link {
+  color: #fff;
+}
+
+
+.collapse .navbar-collapse a:link {
+  font-size: 1rem;
+  color: #fff;
+  padding-right: 10px;
+}
+
+
+footer .copyright {
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  padding-top: 64px;
+}
+
+
+label {
+  color: #fff;
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 100px;
+  color: #fff;
+}
+
+
+.fb_iframe_widget span{
+  align: left;
+  text-align: left;
+}

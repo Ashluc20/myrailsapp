@@ -1,6 +1,17 @@
 
-   <div class="col-sm">
-     <h1><%= link_to product.name, product %></h1>
-     <p><%= product.description %></p>
-     <strong>$ <%= product.price %></strong>
-   </div><!-- /col -->
+   <div class="row">
+     <div class="col-sm-6">
+       <div class="thumbnail">
+         <img src="..." alt="...">
+         <div class="caption">
+           <h1><%= link_to product.name, product %></h1>
+           <p><%= product.description %></p>
+           <p><button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Rating
+              </button>
+           </p>
+           <strong>$ <%= product.price %></strong>
+         </div>
+       </div>
+     </div>
+   </div>
