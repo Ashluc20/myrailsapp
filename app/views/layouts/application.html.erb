@@ -56,7 +56,13 @@
     <% end %>
   </nav> <!-- end nav container -->
 
+  <% if notice %>
+      <p id="notice" class="alert alert-primary"><%= notice %></p>
+  <% end %>
 
+  <% if alert %>
+      <p id="alert" class="alert alert-secondary"><%= alert %></p>
+  <% end %>
 
   <%= yield %>
 
