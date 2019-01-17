@@ -11,7 +11,16 @@ class ProductsController < ApplicationController
     else
       @products = Product.all
     end
-    Post.paginate(:page => params[:page], :per_page => 30)
+    if params[:search]
+     @pins = Pin.search(params[:search]).paginate(:page => params[:page], :per_page => 5)
+   else
+     @pins = Pin.paginate(:page => params[:page], :per_page => 5)
+   end
+   respond_to do |format|
+     format.html # index.html.erb
+     format.json { render json: @pins }
+     # format.js
+   end
   end
 
   # GET /products/1
