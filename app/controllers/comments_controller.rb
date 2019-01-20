@@ -7,15 +7,15 @@ class CommentsController < ApplicationController
     redirect_to product_path(@product)
 
     respond_to do |format|
-   if @comment.save
+      if @comment.save
      format.html { redirect_to @product, notice: 'Review was created successfully.' }
      format.json { render :show, status: :created, location: @product }
-   else
+      else
      format.html { redirect_to @product, alert: 'Review was not saved successfully.' }
      format.json { render json: @comment.errors, status: :unprocessable_entity }
-   end
+      end
+    end
   end
-
   def destroy
     @comment = Comment.find(params[:id])
     product = @comment.product
