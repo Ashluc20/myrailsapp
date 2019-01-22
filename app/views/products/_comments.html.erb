@@ -10,11 +10,12 @@
             <p><%= comment.body %></p>
             <div class="rated" data-score="<%= comment.rating %>"></div>
         </div>
-        <div class="digg_pagination">
-          <div>
-            <%= page_entries_info @comments %>
-          </div>
-          <%= will_paginate @comments, :container => false %>
-        </div>
     <% end %>
+</div>
+
+<div class="digg_pagination">
+  <div>
+    <%= page_entries_info @comments %>
+  </div>
+  <%= will_paginate @comments, :container => false %>
 </div>
