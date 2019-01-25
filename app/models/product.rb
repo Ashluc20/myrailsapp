@@ -10,9 +10,7 @@ class Product < ApplicationRecord
     else
       Product.where("name LIKE ?", "%#{search_term}%")
     end
-    paginate :per_page => 5, :page => page,
-           :conditions => ['name like ?', "%#{search}%"],
-           :order => 'name'
+
   end
 
   def highest_rating_comment
