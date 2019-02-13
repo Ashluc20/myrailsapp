@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :users
   resources :products do
     resources :comments
+    resources :payments
   end
   get 'simple_pages/about'
   get 'simple_pages/contact'
@@ -11,4 +12,6 @@ Rails.application.routes.draw do
   root 'simple_pages#index'
   resources :orders, only: [:index, :show, :create, :destroy]
   post 'simple_pages/thank_you'
+
+  post 'payments/create'
 end
