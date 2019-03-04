@@ -1,16 +1,47 @@
+.body-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.line-height-35 {
+  line-height: 35px;
+}
+
+.two-column {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+}
+
 body {
   background-color: #fff;
   color: #333;
-  margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  display: block;
+  margin-bottom: 94.98px;
+  margin-top: 135.97px;
 }
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+}
+
+.p-override {
+  a {
+    color: initial;
+    font-size: inherit;
+    &:hover {
+      background-color: inherit;
+      color: inherit;
+    }
+  }
 }
 
 pre {
