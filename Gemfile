@@ -85,3 +85,5 @@ gem 'stripe'
 gem 'brakeman'
 
 gem 'jquery-rails'
+
+gem 'dalli'
