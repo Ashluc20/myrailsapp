@@ -87,3 +87,5 @@ gem 'brakeman'
 gem 'jquery-rails'
 
 gem 'dalli'
+
+gem 'connection_pool'

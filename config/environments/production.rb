@@ -102,5 +102,6 @@ config.cache_store = :mem_cache_store,
                      :failover => true,
                      :socket_timeout => 1.5,
                      :socket_failure_delay => 0.2,
-                     :down_retry_delay => 60
+                     :down_retry_delay => 60,
+                     :pool_size => 5
                     }
