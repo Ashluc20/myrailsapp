@@ -93,7 +93,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.default_url_options = { host: 'ashleynovels.herokuapp.com' }
-end
+
 
   config.cache_store = :mem_cache_store,
                     (ENV["MEMCACHIER_SERVERS"] || "").split(","),
@@ -105,3 +105,4 @@ end
                      :down_retry_delay => 60,
                      :pool_size => 5
                     }
+end
