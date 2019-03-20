@@ -106,5 +106,5 @@ Rails.application.configure do
                      :pool_size => 5
                     }
 
-  config.cache_store = :redis_store, 'redis://localhost:6379/0/cache'
+  
 end
