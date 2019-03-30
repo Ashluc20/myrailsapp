@@ -23,13 +23,19 @@
 
 <%= @product.highest_rating_comment %>
 
-
+<p class="viewed">
+  <span class="badge">
+    <i class="glyphicon glyphicon-eye-open"></i>
+    Viewed
+    <%= @product.viewed %>
+  </span>
+</p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
 
 <%= render 'new_comment' %>
-
+<div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
 <%= render 'comments' %>
 
 <p>Average Rating: <div class="#average-rating" data-score="<%= @product.average_rating %>"></div> </p>
