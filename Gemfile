@@ -92,4 +92,4 @@ gem 'connection_pool'
 
 gem 'redis-rails'
 
-gem 'sprockets', '~>3.7.2'
+gem 'sprockets', '~>4.0.0.beta8'
