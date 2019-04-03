@@ -91,5 +91,3 @@ gem 'dalli'
 gem 'connection_pool'
 
 gem 'redis-rails'
-
-gem 'sprockets', '~>4.0.0.beta8'
