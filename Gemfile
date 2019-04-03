@@ -91,3 +91,5 @@ gem 'dalli'
 gem 'connection_pool'
 
 gem 'redis-rails'
+
+gem 'sprockets', '~>3.7.2'
