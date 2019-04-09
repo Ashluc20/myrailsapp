@@ -8,10 +8,9 @@ App.product = App.cable.subscriptions.create("ProductChannel", {
   },
 
   received: function(data) {
-    received: function() {
       // Called when there's incoming data on the websocket for this channel
       $(".alert.alert-info").show();
     }
     // Called when there's incoming data on the websocket for this channel
-  }
+
 });
